@@ -157,12 +157,11 @@ nav a:hover,
 }
 .hero {
   overflow: hidden;
-  background: radial-gradient(
-    ellipse at 88% 47%,
-    #cdeff9 0,
-    #f2fbff 32%,
-    #fff 66%
-  );
+  background-color: #f5fbff;
+  background-image: url("assets/fundo1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-grid {
   min-height: 705px;
@@ -496,8 +495,29 @@ nav a:hover,
   font-size: 0.8rem;
 }
 .care-section {
-  background: var(--pale);
   padding-block: 86px;
+  background-color: #061a32;
+  background-image: url("assets/fundo2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.care-section .section-heading h2 {
+  color: #ffffff;
+}
+
+.care-section .eyebrow {
+  color: #7de5eb;
+}
+
+.care-section .section-heading > p,
+.care-section .care-foot {
+  color: #c5d9e8;
+}
+
+.care-section .care-grid article {
+  color: var(--ink);
 }
 .care-grid {
   display: grid;
@@ -541,6 +561,14 @@ nav a:hover,
 .care-foot small {
   font-size: 0.75rem;
 }
+#profissionais {
+  background-color: #f5fbff;
+  background-image: url("assets/fundo1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .professional-panel {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -611,7 +639,11 @@ nav a:hover,
 .app-panel {
   border-radius: 27px;
   padding: 65px;
-  background: #102e47;
+  background-color: #061a32;
+  background-image: url("assets/fundo2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: white;
   display: grid;
   grid-template-columns: 1.25fr 1fr;
