@@ -155,6 +155,7 @@ nav a:hover,
 .skip:focus {
   top: 10px;
 }
+/* Apresentação: fundo claro em toda a largura. */
 .hero {
   overflow: hidden;
   background-color: #f5fbff;
@@ -494,6 +495,7 @@ nav a:hover,
   margin-top: 28px;
   font-size: 0.8rem;
 }
+/* Cuidados: fundo escuro; os cartões continuam claros. */
 .care-section {
   padding-block: 86px;
   background-color: #061a32;
@@ -561,14 +563,6 @@ nav a:hover,
 .care-foot small {
   font-size: 0.75rem;
 }
-#profissionais {
-  background-color: #f5fbff;
-  background-image: url("assets/fundo1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .professional-panel {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -639,11 +633,7 @@ nav a:hover,
 .app-panel {
   border-radius: 27px;
   padding: 65px;
-  background-color: #061a32;
-  background-image: url("assets/fundo2.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: transparent;
   color: white;
   display: grid;
   grid-template-columns: 1.25fr 1fr;
@@ -748,7 +738,7 @@ details p {
   font-size: 0.93rem;
 }
 footer {
-  background: #f2f7fa;
+  background: linear-gradient(135deg, #edf6fc, #f8fcff);
   padding: 50px 0 24px;
 }
 .footer-main {
@@ -816,7 +806,7 @@ dialog p {
   color: var(--ink);
 }
 .legal-hero {
-  background: var(--pale);
+  background: #f5fbff url("assets/fundo1.png") center / cover no-repeat;
   padding: 70px 0;
 }
 .legal-hero h1 {
@@ -1140,4 +1130,87 @@ dialog p {
 .developer-credit a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+/* =========================================================
+   Fundos das seções e conteúdo centralizado
+   A seção ocupa a página inteira; o padding limita o conteúdo.
+   Evita fundos presos à largura original de .container.
+   ========================================================= */
+
+:root {
+  --page-gutter: 48px;
+}
+
+main > .section.container,
+main > .trust.container,
+main > .principles.container {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  padding-inline: max(var(--page-gutter), calc((100% - 1200px) / 2));
+}
+
+main > .principles.container {
+  background: linear-gradient(120deg, #edf8fc, #f7fbff);
+}
+
+#como-funciona {
+  background: linear-gradient(135deg, #ffffff, #eef7fd);
+}
+
+#profissionais {
+  background-color: #f5fbff;
+  background-image: url("assets/fundo1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main > .trust.container {
+  padding-block: 80px;
+  background: linear-gradient(135deg, #edf7fc, #ffffff);
+}
+
+#aplicativo {
+  background-color: #061a32;
+  background-image: url("assets/fundo2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* O fundo agora pertence à seção, não ao painel interno. */
+#aplicativo .app-panel {
+  background: transparent;
+}
+
+/* Mantém a leitura do FAQ mais estreita, com fundo inteiro. */
+main > .faq.container {
+  padding-block: 80px;
+  padding-inline: max(var(--page-gutter), calc((100% - 850px) / 2));
+  background: linear-gradient(135deg, #ffffff, #edf7fc);
+}
+
+@media (max-width: 1050px) {
+  :root {
+    --page-gutter: 28px;
+  }
+}
+
+@media (max-width: 800px) {
+  main > .trust.container,
+  main > .faq.container {
+    padding-block: 65px;
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --page-gutter: 20px;
+  }
+
+  #aplicativo .app-panel {
+    padding-inline: 0;
+  }
 }
