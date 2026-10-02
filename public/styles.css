@@ -1127,9 +1127,9 @@ dialog p {
   color: var(--blue);
   font-weight: 650;
 }
+.developer-credit a,
 .developer-credit a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration: none;
 }
 
 /* =========================================================
