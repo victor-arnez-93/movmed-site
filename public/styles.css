@@ -865,277 +865,9 @@ dialog p {
   color: var(--blue);
   text-decoration: underline;
 }
-@media (min-width: 1500px) {
-  .hero-grid {
-    min-height: 760px;
-  }
-}
-@media (max-width: 1050px) {
-  .container {
-    width: calc(100% - 56px);
-  }
-  nav {
-    gap: 16px;
-    font-size: 0.8rem;
-  }
-  .hero-grid {
-    gap: 20px;
-  }
-  .floating-label {
-    left: -4px;
-    padding: 10px;
-    font-size: 0.75rem;
-  }
-  .label-bottom {
-    left: auto;
-    right: -5px;
-  }
-  .professional-panel,
-  .trust {
-    gap: 45px;
-  }
-  .app-panel {
-    padding: 40px;
-  }
-}
-@media (max-width: 800px) {
-  .nav {
-    height: 78px;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  nav {
-    display: none;
-    position: absolute;
-    top: 78px;
-    left: 0;
-    width: 100%;
-    padding: 22px 28px;
-    background: white;
-    border-bottom: 1px solid var(--line);
-    flex-direction: column;
-    align-items: stretch;
-    font-size: 1rem;
-  }
-  nav.open {
-    display: flex;
-  }
-  .hero-grid {
-    grid-template-columns: 1fr;
-    padding-top: 48px;
-    gap: 20px;
-  }
-  .hero-copy {
-    max-width: 600px;
-  }
-  .hero-visual {
-    min-height: 560px;
-    max-width: 500px;
-    width: 100%;
-    margin: auto;
-  }
-  .principles {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 16px 30px;
-  }
-  .section {
-    padding-block: 65px;
-  }
-  .section-heading {
-    display: block;
-  }
-  .section-heading > p {
-    margin-top: 24px;
-    max-width: 500px;
-  }
-  .steps {
-    gap: 22px;
-  }
-  .care-grid {
-    grid-template-columns: 1fr;
-  }
-  .care-grid article {
-    padding: 25px;
-  }
-  .care-icon {
-    margin-bottom: 17px;
-  }
-  .care-foot {
-    flex-direction: column;
-    gap: 8px;
-  }
-  .professional-panel,
-  .trust {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  .trust {
-    padding-block: 30px;
-  }
-  .app-panel {
-    grid-template-columns: 1fr;
-  }
-  .app-mark {
-    display: none;
-  }
-  .footer-main {
-    grid-template-columns: 1.3fr 1fr 1fr;
-    gap: 20px;
-  }
-  .legal-layout {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .legal-nav {
-    position: static;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--line);
-  }
-}
-@media (max-width: 540px) {
-  .container {
-    width: calc(100% - 40px);
-  }
-  h1 {
-    font-size: 2.7rem;
-  }
-  .eyebrow {
-    font-size: 0.68rem;
-  }
-  .pill {
-    font-size: 0.58rem;
-  }
-  .hero-copy > p {
-    font-size: 1rem;
-  }
-  .hero-actions {
-    gap: 20px;
-  }
-  .hero-note {
-    font-size: 0.75rem;
-  }
-  .hero-note small {
-    font-size: 0.68rem;
-  }
-  .hero-visual {
-    min-height: 560px;
-  }
-  .orbit {
-    width: 380px;
-    height: 380px;
-  }
-  .orbit-two {
-    width: 310px;
-    height: 310px;
-  }
-  .floating-label {
-    top: 35px;
-    font-size: 0.7rem;
-    left: -6px;
-  }
-  .floating-label small {
-    font-size: 0.63rem;
-  }
-  .floating-label .icon {
-    width: 30px;
-    height: 30px;
-  }
-  .label-bottom {
-    top: auto;
-    bottom: 29px;
-    left: auto;
-    right: -3px;
-  }
-  .phone {
-    width: 270px;
-  }
-  .steps {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-  .steps article {
-    padding-left: 60px;
-  }
-  .line-icon {
-    position: absolute;
-    left: 6px;
-    top: 25px;
-  }
-  .step-number {
-    top: 17px;
-  }
-  .steps h3 {
-    margin-top: 15px;
-  }
-  .principles {
-    font-size: 0.8rem;
-  }
-  .app-panel {
-    padding: 30px 23px;
-    border-radius: 20px;
-  }
-  .app-panel h2 {
-    font-size: 2rem;
-  }
-  .store {
-    padding: 9px 12px;
-  }
-  .store strong {
-    font-size: 1rem;
-  }
-  .store svg {
-    width: 22px;
-  }
-  .trust-links small {
-    font-size: 0.75rem;
-  }
-  .footer-main {
-    grid-template-columns: 1fr 1fr;
-  }
-  .footer-brand {
-    grid-column: 1/-1;
-    margin-bottom: 15px;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    gap: 10px;
-  }
-  dialog {
-    padding: 35px 25px;
-  }
-  .legal-hero {
-    padding: 45px 0;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
-    transition: none !important;
-    animation: none !important;
-  }
-}
-
-.developer-credit a {
-  color: var(--blue);
-  font-weight: 650;
-}
-.developer-credit a,
-.developer-credit a:hover {
-  text-decoration: none;
-}
 
 /* =========================================================
-   Fundos das seções e conteúdo centralizado
-   A seção ocupa a página inteira; o padding limita o conteúdo.
-   Evita fundos presos à largura original de .container.
+   Fundos e conteúdo centralizado
    ========================================================= */
 
 :root {
@@ -1148,7 +880,10 @@ main > .principles.container {
   width: 100%;
   max-width: none;
   margin-inline: 0;
-  padding-inline: max(var(--page-gutter), calc((100% - 1200px) / 2));
+  padding-inline: max(
+    var(--page-gutter),
+    calc((100% - 1200px) / 2)
+  );
 }
 
 main > .principles.container {
@@ -1180,37 +915,402 @@ main > .trust.container {
   background-size: cover;
 }
 
-/* O fundo agora pertence à seção, não ao painel interno. */
 #aplicativo .app-panel {
   background: transparent;
 }
 
-/* Mantém a leitura do FAQ mais estreita, com fundo inteiro. */
 main > .faq.container {
   padding-block: 80px;
-  padding-inline: max(var(--page-gutter), calc((100% - 850px) / 2));
+  padding-inline: max(
+    var(--page-gutter),
+    calc((100% - 850px) / 2)
+  );
   background: linear-gradient(135deg, #ffffff, #edf7fc);
 }
+
+/* =========================================================
+   Rodapé: mesmas três colunas nas duas partes
+   ========================================================= */
+
+.footer-main,
+.footer-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 45px;
+  align-items: start;
+  text-align: left;
+}
+
+.footer-bottom > span {
+  min-width: 0;
+}
+
+.developer-credit a {
+  color: var(--blue);
+  font-weight: 650;
+}
+
+.developer-credit a,
+.developer-credit a:hover {
+  text-decoration: none;
+}
+
+/* =========================================================
+   Telas grandes
+   ========================================================= */
+
+@media (min-width: 1500px) {
+  .hero-grid {
+    min-height: 760px;
+  }
+}
+
+/* =========================================================
+   Até 1050px
+   ========================================================= */
 
 @media (max-width: 1050px) {
   :root {
     --page-gutter: 28px;
   }
+
+  .container {
+    width: calc(100% - 56px);
+  }
+
+  nav {
+    gap: 16px;
+    font-size: 0.8rem;
+  }
+
+  .hero-grid {
+    gap: 20px;
+  }
+
+  .floating-label {
+    left: -4px;
+    padding: 10px;
+    font-size: 0.75rem;
+  }
+
+  .label-bottom {
+    left: auto;
+    right: -5px;
+  }
+
+  .professional-panel,
+  .trust {
+    gap: 45px;
+  }
+
+  .app-panel {
+    padding: 40px;
+  }
+
+  .footer-main,
+  .footer-bottom {
+    gap: 25px;
+  }
 }
 
+/* =========================================================
+   Até 800px
+   ========================================================= */
+
 @media (max-width: 800px) {
+  .nav {
+    height: 78px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    padding: 22px 28px;
+    background: white;
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 1rem;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    padding-top: 48px;
+    gap: 20px;
+  }
+
+  .hero-copy {
+    max-width: 600px;
+  }
+
+  .hero-visual {
+    min-height: 560px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .principles {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px 30px;
+  }
+
+  .section {
+    padding-block: 65px;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading > p {
+    margin-top: 24px;
+    max-width: 500px;
+  }
+
+  .steps {
+    gap: 22px;
+  }
+
+  .care-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .care-grid article {
+    padding: 25px;
+  }
+
+  .care-icon {
+    margin-bottom: 17px;
+  }
+
+  .care-foot {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .professional-panel,
+  .trust {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
   main > .trust.container,
   main > .faq.container {
     padding-block: 65px;
   }
+
+  .app-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .app-mark {
+    display: none;
+  }
+
+  .footer-main,
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .legal-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .legal-nav {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+  }
 }
+
+/* =========================================================
+   Até 540px
+   ========================================================= */
 
 @media (max-width: 540px) {
   :root {
     --page-gutter: 20px;
   }
 
+  .container {
+    width: calc(100% - 40px);
+  }
+
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+  }
+
+  .pill {
+    font-size: 0.58rem;
+  }
+
+  .hero-copy > p {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    gap: 20px;
+  }
+
+  .hero-note {
+    font-size: 0.75rem;
+  }
+
+  .hero-note small {
+    font-size: 0.68rem;
+  }
+
+  .hero-visual {
+    min-height: 560px;
+  }
+
+  .orbit {
+    width: 380px;
+    height: 380px;
+  }
+
+  .orbit-two {
+    width: 310px;
+    height: 310px;
+  }
+
+  .floating-label {
+    top: 35px;
+    font-size: 0.7rem;
+    left: -6px;
+  }
+
+  .floating-label small {
+    font-size: 0.63rem;
+  }
+
+  .floating-label .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .label-bottom {
+    top: auto;
+    bottom: 29px;
+    left: auto;
+    right: -3px;
+  }
+
+  .phone {
+    width: 270px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .steps article {
+    padding-left: 60px;
+  }
+
+  .line-icon {
+    position: absolute;
+    left: 6px;
+    top: 25px;
+  }
+
+  .step-number {
+    top: 17px;
+  }
+
+  .steps h3 {
+    margin-top: 15px;
+  }
+
+  .principles {
+    font-size: 0.8rem;
+  }
+
+  .app-panel {
+    padding: 30px 23px;
+    border-radius: 20px;
+  }
+
   #aplicativo .app-panel {
     padding-inline: 0;
+  }
+
+  .app-panel h2 {
+    font-size: 2rem;
+  }
+
+  .store {
+    padding: 9px 12px;
+  }
+
+  .store strong {
+    font-size: 1rem;
+  }
+
+  .store svg {
+    width: 22px;
+  }
+
+  .trust-links small {
+    font-size: 0.75rem;
+  }
+
+  .footer-brand {
+    margin-bottom: 15px;
+  }
+
+  .footer-bottom {
+    gap: 10px;
+  }
+
+  dialog {
+    padding: 35px 25px;
+  }
+
+  .legal-hero {
+    padding: 45px 0;
+  }
+}
+
+/* =========================================================
+   Preferência por movimento reduzido
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
   }
 }
